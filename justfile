@@ -18,3 +18,12 @@ format:
 
 format-check:
   scala-cli fmt --check .
+
+test-embed-1:
+  #!/usr/bin/env bash
+  echo "hello"
+
+test-embed-2:
+  #!/usr/bin/env -S scala-cli shebang
+  println("Hello world")
+
